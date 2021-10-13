@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<?xml-stylesheet type="text/xsl" href="../templates/main.xsl"?>
+<at:post xmlns:xh="http://www.w3.org/1999/xhtml"
+         xmlns:at="https://apply-templates.com"
+         postid="1">
+    <at:title>TEST</at:title>
+    <at:author>Smarter folks than I</at:author>
+    <at:date>1998-02-10</at:date>
+    <at:content>
+        <xh:p>XML was developed by an XML Working Group (originally known as the SGML Editorial Review Board) formed under the auspices of the World Wide Web Consortium (W3C) in 1996. It was chaired by Jon Bosak of Sun Microsystems with the active participation of an XML Special Interest Group (previously known as the SGML Working Group) also organized by the W3C. The membership of the XML Working Group is given in an appendix. Dan Connolly served as the WG's contact with the W3C.</xh:p>
+        <xh:p>The design goals for XML are:</xh:p>
+        <xh:ol>
+            <xh:li>XML shall be straightforwardly usable over the Internet.</xh:li>
+            <xh:li>XML shall support a wide variety of applications.</xh:li>
+            <xh:li>XML shall be compatible with SGML.</xh:li>
+            <xh:li>It shall be easy to write programs which process XML documents.</xh:li>
+            <xh:li>The number of optional features in XML is to be kept to the absolute minimum, ideally zero.</xh:li>
+            <xh:li>XML documents should be human-legible and reasonably clear.</xh:li>
+            <xh:li>The XML design should be prepared quickly.</xh:li>
+            <xh:li>The design of XML shall be formal and concise.</xh:li>
+            <xh:li>XML documents shall be easy to create.</xh:li>
+            <xh:li>Terseness in XML markup is of minimal importance.</xh:li>
+        </xh:ol>
+    </at:content>
+</at:post>

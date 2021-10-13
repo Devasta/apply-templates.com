@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<?xml-stylesheet type="text/xsl" href="../templates/main.xsl"?>
+<at:post xmlns:xh="http://www.w3.org/1999/xhtml"
+         xmlns:at="https://apply-templates.com"
+         postid="1">
+    <at:title>Hello World</at:title>
+    <at:author>Daniel</at:author>
+    <at:date>22021-10-13T22:59:00UTC</at:date>
+    <at:content>
+        <xh:p>Hello world! This is my first post.</xh:p>
+        <xh:p>Hopefully there will be more. :)</xh:p>
+        <xh:p>If you see any bugs, please let me know. This is the first web page I have ever written for the outside world, so would be good to hear any feedback... I won't be getting rid of the XSLT though!</xh:p>
+    </at:content>
+</at:post>

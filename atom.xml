@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<?xml-stylesheet type="text/xsl" href="https://apply-templates.com/templates/main.xsl"?>
+<atom:feed xmlns:atom="http://www.w3.org/2005/Atom">
+    <atom:title>apply-templates</atom:title>
+    <atom:link href="https://apply-templates.com/atom.xml" rel="self" />
+    <atom:id>apply-templates.com</atom:id>
+    <atom:updated>1998-02-10</atom:updated>
+    <atom:entry>
+        <atom:title>Hello World</atom:title>
+        <atom:link href="https://apply-templates.com/posts/1.xml"/>
+        <atom:id>https://apply-templates.com/posts/1.xml</atom:id>
+        <atom:updated>2021-10-13T22:59:00UTC</atom:updated>
+        <atom:summary>My first post.</atom:summary>
+        <atom:author>
+            <atom:name>Daniel</atom:name>
+        </atom:author>
+    </atom:entry>
+    <atom:entry>
+        <atom:title>Test</atom:title>
+        <atom:link href="https://apply-templates.com/posts/0.xml"/>
+        <atom:id>https://apply-templates.com/posts/0.xml</atom:id>
+        <atom:updated>1998-02-10</atom:updated>
+        <atom:summary>Test.</atom:summary>
+        <atom:author>
+            <atom:name>Smarter folks than I</atom:name>
+        </atom:author>
+    </atom:entry>
+</atom:feed>
+
+
