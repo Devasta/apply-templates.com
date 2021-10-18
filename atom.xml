@@ -4,7 +4,17 @@
     <atom:title>apply-templates</atom:title>
     <atom:link href="https://apply-templates.com/atom.xml" rel="self" />
     <atom:id>apply-templates.com</atom:id>
-    <atom:updated>1998-02-10</atom:updated>
+    <atom:updated>2021-10-13T22:59:00UTC</atom:updated>
+    <atom:entry>
+        <atom:title>Client side templating without Javascript</atom:title>
+        <atom:link href="https://apply-templates.com/posts/2/2.xml"/>
+        <atom:id>https://apply-templates.com/posts/2/2.xml</atom:id>
+        <atom:updated>2021-10-18T10:09:12UTC</atom:updated>
+        <atom:summary>Why I am using XSLT</atom:summary>
+        <atom:author>
+            <atom:name>Daniel</atom:name>
+        </atom:author>
+    </atom:entry>
     <atom:entry>
         <atom:title>Hello World</atom:title>
         <atom:link href="https://apply-templates.com/posts/1.xml"/>

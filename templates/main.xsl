@@ -13,7 +13,7 @@
                 xml:lang="en"
                 encoding="UTF-8"
                 indent="yes"
-                media-type="text/xml"/>
+                media-type="application/xhtml+xml"/>
 
     <xsl:include href="navbar.xsl"/>
     <xsl:include href="posts.xsl"/>
@@ -30,6 +30,8 @@
                         <xsl:otherwise>apply-templates.com</xsl:otherwise>
                     </xsl:choose>
                 </xh:title>
+                <xh:link rel="icon" type="image/svg+xml" href="/icons/favicon.svg" />
+
                 <xh:style type="text/css">
                     @namespace xh url("http://www.w3.org/1999/xhtml");
                     xh|body {

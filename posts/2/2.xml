@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<?xml-stylesheet type="text/xsl" href="../../templates/main.xsl"?>
+<at:post xmlns:xh="http://www.w3.org/1999/xhtml"
+         xmlns:at="https://apply-templates.com"
+         xmlns:post="https://apply-templates.com/2/"
+         postid="2">
+    <at:title>Client side templating without Javascript</at:title>
+    <at:author>Daniel</at:author>
+    <at:date>2021-10-18T10:09:12UTC</at:date>
+    <at:content>
+        <xh:p>I'm enjoying working on this webpage, there is a lot to be said for messing around with static XHTML and deploying via filezilla!</xh:p>
+        <xh:p>I am doing all the templating client side, but not a scrap of Javascript in sight. The way to do this is with <xh:a href="https://www.w3schools.com/xml/xsl_intro.asp">XSLT</xh:a>, a language putpose built to allow easy transform of XML documents, in this case we are transforming to XHTML.</xh:p>
+        <xh:p>There are many advantages to this approach:</xh:p>
+        <xh:ol>
+            <xh:li>Unlike JSX, your templates are natively supported by browsers, you aren't forever tied to React.</xh:li>
+            <xh:li>Download the templates once, and your posts can be tiny. The total size for the XML document for this post is less than 2kb!</xh:li>
+            <xh:li>Your data can be consumed by multiple processes.Take a look, if you check the homepage you can see its transforming an atom feed. You can add the homepage directly to your favorite RSS/Atom app.<xh:img src="NetworkTab.png" alt="Network tab in firefox console, showing the homepage returns an Atom feed."/></xh:li>
+            <xh:li>Namespaces! XHTML can use XML namespaces in CSS, which can help keep things organised.</xh:li>
+        </xh:ol>
+    </at:content>
+</at:post>

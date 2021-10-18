@@ -76,7 +76,10 @@
             xh|article xh|header xh|h1 {
                 padding:0;
                 margin:0;
-                font-size: 3rem;
+                font-size: 1.7vw;
+                width: 600px;
+                height: 75px;
+
             }
             xh|article xh|header xh|h1 xh|a {
                 text-decoration: none;
