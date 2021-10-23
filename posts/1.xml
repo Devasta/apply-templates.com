@@ -2,7 +2,8 @@
 <?xml-stylesheet type="text/xsl" href="../templates/main.xsl"?>
 <at:post xmlns:xh="http://www.w3.org/1999/xhtml"
          xmlns:at="https://apply-templates.com"
-         postid="1">
+         postid="1"
+         posturl="posts/1.xml">
     <at:title>Hello World</at:title>
     <at:author>Daniel</at:author>
     <at:date>22021-10-13T22:59:00UTC</at:date>

@@ -50,7 +50,12 @@
             <xh:section>
                 <xsl:copy-of select="at:content"/>
             </xh:section>
-            <xh:footer/>
+            <xh:footer>
+                <xsl:call-template name="Socials">
+                    <xsl:with-param name="title" select="at:title"/>
+                    <xsl:with-param name="URL" select="concat('https://apply-templates.com/', /at:post/@posturl)"/>
+                </xsl:call-template>
+            </xh:footer>
         </xh:article>
     </xsl:template>
 

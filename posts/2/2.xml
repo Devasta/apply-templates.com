@@ -2,8 +2,8 @@
 <?xml-stylesheet type="text/xsl" href="../../templates/main.xsl"?>
 <at:post xmlns:xh="http://www.w3.org/1999/xhtml"
          xmlns:at="https://apply-templates.com"
-         xmlns:post="https://apply-templates.com/2/"
-         postid="2">
+         postid="2"
+         posturl="posts/2/2.xml">
     <at:title>Client side templating without Javascript</at:title>
     <at:author>Daniel</at:author>
     <at:date>2021-10-18T10:09:12UTC</at:date>

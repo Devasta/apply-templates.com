@@ -17,6 +17,7 @@
 
     <xsl:include href="navbar.xsl"/>
     <xsl:include href="posts.xsl"/>
+    <xsl:include href="socialmedia.xsl"/>
 
     <xsl:template match="/">
         <xh:html lang="en" xml:lang="en"
@@ -54,6 +55,7 @@
                 </xh:style>
                 <xsl:call-template name="navbarstyle"/>
                 <xsl:call-template name="postsstyle"/>
+                <xsl:call-template name="SocialsStyle"/>
             </xh:head>
             <xh:body>
                 <xsl:call-template name="navbar"/>

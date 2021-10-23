@@ -2,7 +2,8 @@
 <?xml-stylesheet type="text/xsl" href="../templates/main.xsl"?>
 <at:post xmlns:xh="http://www.w3.org/1999/xhtml"
          xmlns:at="https://apply-templates.com"
-         postid="0">
+         postid="0"
+         posturl="posts/0.xml">
     <at:title>TEST</at:title>
     <at:author>Smarter folks than I</at:author>
     <at:date>1998-02-10</at:date>
