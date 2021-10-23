@@ -9,7 +9,7 @@
     <at:date>2021-10-18T10:09:12UTC</at:date>
     <at:content>
         <xh:p>I'm enjoying working on this webpage, there is a lot to be said for messing around with static XHTML and deploying via filezilla!</xh:p>
-        <xh:p>I am doing all the templating client side, but not a scrap of Javascript in sight. The way to do this is with <xh:a href="https://www.w3schools.com/xml/xsl_intro.asp">XSLT</xh:a>, a language putpose built to allow easy transform of XML documents, in this case we are transforming to XHTML.</xh:p>
+        <xh:p>I am doing all the templating client side, but not a scrap of Javascript in sight. The way to do this is with <xh:a href="https://www.w3schools.com/xml/xsl_intro.asp">XSLT</xh:a>, a language purpose built to allow easy transform of XML documents, in this case we are transforming to XHTML.</xh:p>
         <xh:p>There are many advantages to this approach:</xh:p>
         <xh:ol>
             <xh:li>Unlike JSX, your templates are natively supported by browsers, you aren't forever tied to React.</xh:li>
