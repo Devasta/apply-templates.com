@@ -17,5 +17,10 @@
             <xh:li>Your data can be consumed by multiple processes.Take a look, if you check the homepage you can see its transforming an atom feed. You can add the homepage directly to your favorite RSS/Atom app.<xh:img src="NetworkTab.png" alt="Network tab in firefox console, showing the homepage returns an Atom feed."/></xh:li>
             <xh:li>Namespaces! XHTML can use XML namespaces in CSS, which can help keep things organised.</xh:li>
         </xh:ol>
+        <xh:br/>
+        <xh:p>And finally, the biggest reason to use XHTML...</xh:p>
+        <xh:ol start="5">
+            <xh:li>You never again for the rest of your life need to deal with online discourse about whether or not HTML is a programming language. You are using XML to transform XML into more XML, if that isn't programming than neither is Lisp!</xh:li>
+        </xh:ol>
     </at:content>
 </at:post>
