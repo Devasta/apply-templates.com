@@ -106,7 +106,6 @@
             }
 
             at|socials xh|ul xh|li xh|p {
-                verrtical-align: middle;
                 margin : 0 auto;
                 padding: 0;
             }
