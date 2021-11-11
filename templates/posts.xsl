@@ -5,6 +5,7 @@
         xmlns:svg="http://www.w3.org/2000/svg"
         xmlns:atom="http://www.w3.org/2005/Atom"
         xmlns:at="https://apply-templates.com"
+        xmlns:xhl="https://apply-templates.com/XMLHL"
         version="1.0">
 
     <xsl:output method="xml"/>
@@ -49,6 +50,7 @@
             </xh:header>
             <xh:section>
                 <xsl:copy-of select="at:content"/>
+                <xsl:apply-templates select="xh:code"/>
             </xh:section>
             <xh:footer>
                 <xsl:call-template name="Socials">
