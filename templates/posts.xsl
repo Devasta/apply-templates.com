@@ -8,7 +8,7 @@
         xmlns:xhl="https://apply-templates.com/XMLHL"
         version="1.0">
 
-    <xsl:output method="xml"/>
+    <xsl:output method="xml" indent="no"/>
 
     <xsl:template mode="content" match="atom:entry">
         <xh:article>
@@ -49,8 +49,7 @@
                 </at:publicationdetails>
             </xh:header>
             <xh:section>
-                <xsl:copy-of select="at:content"/>
-                <xsl:apply-templates select="xh:code"/>
+                <xsl:apply-templates select="at:content"/>
             </xh:section>
             <xh:footer>
                 <xsl:call-template name="Socials">
@@ -114,5 +113,7 @@
             }
         </xh:style>
     </xsl:template>
+
+    <!-- HERE -->
 
 </xsl:transform>

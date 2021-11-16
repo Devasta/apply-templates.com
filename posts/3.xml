@@ -2,7 +2,7 @@
 <?xml-stylesheet type="text/xsl" href="../templates/main.xsl"?>
 <at:post xmlns:xh="http://www.w3.org/1999/xhtml"
          xmlns:at="https://apply-templates.com"
-         xmlns:xmlhl="https://apply-templates.com/XMLHL"
+         xmlns:xhl="https://apply-templates.com/XMLHL"
          postid="3"
          posturl="posts/3.xml">
     <at:title>Syntax Highlighting</at:title>
@@ -10,7 +10,7 @@
     <at:date>2021-11-11</at:date>
     <at:content>
         <xh:p>I have made a new feature for this site, now it can highlight syntax! Example below:</xh:p>
-        <xh:code xmlhl:language="xml"><![CDATA[<?xml version="1.0" encoding="UTF-8" ?>
+        <xh:code><![CDATA[<?xml version="1.0" encoding="UTF-8" ?>
 <?xml-stylesheet type="text/xsl" href="stylesheet.xsl"?>
 <PARENT>
     <CHILD1>VAL1</CHILD1>

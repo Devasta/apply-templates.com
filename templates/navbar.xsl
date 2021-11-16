@@ -6,7 +6,7 @@
         xmlns:at="https://apply-templates.com"
         version="1.0">
 
-    <xsl:output method="xml"/>
+    <xsl:output method="xml" indent="no"/>
 
     <xsl:template name="navbar">
         <at:navbar>

@@ -3,7 +3,7 @@
         xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
         xmlns:atom="http://www.w3.org/2005/Atom"
         xmlns:at="https://apply-templates.com"
-        xmlns:xmlhl="https://apply-templates.com/XMLHL"
+        xmlns:xhl="https://apply-templates.com/XMLHL"
         version="1.0">
 
     <xsl:output version="1.0"
@@ -16,7 +16,7 @@
                 indent="yes"
                 media-type="application/xhtml+xml"/>
 
-    <xsl:include href="https://apply-templates.com/XMLHL/XMLHL.xsl"/>
+    <xsl:include href="XMLHL.xsl"/>
     <xsl:include href="navbar.xsl"/>
     <xsl:include href="posts.xsl"/>
     <xsl:include href="socialmedia.xsl"/>
@@ -64,7 +64,9 @@
                 <xsl:call-template name="navbarstyle"/>
                 <xsl:call-template name="postsstyle"/>
                 <xsl:call-template name="SocialsStyle"/>
+
                 <xsl:call-template name="XMLHLStyles"/>
+
             </xh:head>
             <xh:body>
                 <xsl:call-template name="navbar"/>
