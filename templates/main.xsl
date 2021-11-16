@@ -16,7 +16,7 @@
                 indent="yes"
                 media-type="application/xhtml+xml"/>
 
-    <xsl:include href="XMLHL.xsl"/>
+    <xsl:include href="https://apply-templates.com/XMLHL/XMLHL.xsl"/>
     <xsl:include href="navbar.xsl"/>
     <xsl:include href="posts.xsl"/>
     <xsl:include href="socialmedia.xsl"/>
