@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<?xml-stylesheet type="text/xsl" href="../templates/main.xsl"?>
+<at:post xmlns:xh="http://www.w3.org/1999/xhtml"
+         xmlns:at="https://apply-templates.com"
+         xmlns:xhl="https://apply-templates.com/XMLHL"
+         xmlns:csn1="https://apply-templates.com/posts/4/cssnamespace1"
+         xmlns:csn2="https://apply-templates.com/posts/4/cssnamespace2"
+         postid="4"
+         posturl="posts/4.xml">
+    <at:title>CSS Namespaces in (X)HTML</at:title>
+    <at:author>Daniel</at:author>
+    <at:date>2021-12-01</at:date>
+    <at:content>
+        <xh:p>I see a lot of people online complaining about CSS having global namespaces, and the possible leaking of styles across parts of your site as the global scope is polluted. There is a lot of work going into solving the problem, between <xh:a href="https://css-tricks.com/early-days-for-css-scoping/">scoped styles</xh:a>, the <xh:a href="https://css-tricks.com/encapsulating-style-and-structure-with-shadow-dom/">shadow DOM</xh:a>, <xh:a href="https://dev.to/ankur29mac/styled-components-efficiently-write-css-in-js-file-1nj6">CSS-in-JS</xh:a> and so on... but the one hidden gem that a lot of people are missing is that CSS already has namespaces, <xh:a href="https://developer.mozilla.org/en-US/docs/Web/CSS/@namespace">you just need to use XML</xh:a>. </xh:p>
+        <csn1:mytag><xh:p>Red text</xh:p></csn1:mytag>
+        <csn1:mytag><xh:p class="myclass">Red text underlined</xh:p></csn1:mytag>
+        <csn2:mytag><xh:p>Green text</xh:p></csn2:mytag>
+        <csn2:mytag><xh:p class="myclass">Green text struck through</xh:p></csn2:mytag>
+        <xh:style type="text/css">
+        @namespace csn1 url("https://apply-templates.com/posts/4/cssnamespace1");
+        @namespace csn2 url("https://apply-templates.com/posts/4/cssnamespace2");
+            csn1|mytag {
+                color:red;
+            }
+
+            csn2|mytag {
+                color:green;
+            }
+
+            csn1|mytag *.myclass {
+                text-decoration: underline;
+            }
+
+            csn2|mytag *.myclass {
+                text-decoration: line-through;
+            }
+        </xh:style>
+        <xh:p>Take a look at the above! I have the same element names in different namespaces, the styling is different on each namespace, and not a scrap of JS required! The actual XML looks like the below:</xh:p>
+        <xh:code><![CDATA[<csn1:mytag><xh:p>Red text</xh:p></csn1:mytag>
+<csn1:mytag><xh:p class="myclass">Red text underlined</xh:p></csn1:mytag>
+<csn2:mytag><xh:p>Green text</xh:p></csn2:mytag>
+<csn2:mytag><xh:p class="myclass">Green text struck through</xh:p></csn2:mytag>
+
+
+    <xh:style type="text/css">
+    @namespace csn1 url("https://apply-templates.com/posts/4/cssnamespace1");
+    @namespace csn2 url("https://apply-templates.com/posts/4/cssnamespace2");
+        csn1|mytag {
+            color:red;
+        }
+
+        csn2|mytag {
+            color:green;
+        }
+
+        csn1|mytag *.myclass {
+            text-decoration: underline;
+        }
+
+        csn2|mytag *.myclass {
+            text-decoration: line-through;
+        }
+    </xh:style>]]></xh:code>
+        <xh:p>You can also continue to use classes and all the other rules of CSS as normal.</xh:p>
+    </at:content>
+</at:post>

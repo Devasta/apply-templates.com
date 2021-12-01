@@ -4,7 +4,17 @@
     <atom:title>apply-templates</atom:title>
     <atom:link href="https://apply-templates.com/atom.xml" rel="self" />
     <atom:id>apply-templates.com</atom:id>
-    <atom:updated>2021-11-11T19:28:00UTC</atom:updated>
+    <atom:updated>2021-12-01T23:01:00UTC</atom:updated>
+    <atom:entry>
+        <atom:title>CSS Namespaces in (X)HTML</atom:title>
+        <atom:link href="https://apply-templates.com/posts/4.xml"/>
+        <atom:id>https://apply-templates.com/posts/4.xml</atom:id>
+        <atom:updated>2021-12-01T23:01:00UTC</atom:updated>
+        <atom:summary>CSS namespaces are fun!</atom:summary>
+        <atom:author>
+            <atom:name>Daniel</atom:name>
+        </atom:author>
+    </atom:entry>
     <atom:entry>
         <atom:title>Syntax Highlighting</atom:title>
         <atom:link href="https://apply-templates.com/posts/3.xml"/>
