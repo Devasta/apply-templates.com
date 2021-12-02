@@ -11,7 +11,7 @@
     <at:author>Daniel</at:author>
     <at:date>2021-12-01</at:date>
     <at:content>
-        <xh:p>I see a lot of people online complaining about CSS having global namespaces, and the possible leaking of styles across parts of your site as the global scope is polluted. There is a lot of work going into solving the problem, between <xh:a href="https://css-tricks.com/early-days-for-css-scoping/">scoped styles</xh:a>, the <xh:a href="https://css-tricks.com/encapsulating-style-and-structure-with-shadow-dom/">shadow DOM</xh:a>, <xh:a href="https://dev.to/ankur29mac/styled-components-efficiently-write-css-in-js-file-1nj6">CSS-in-JS</xh:a> and so on... but the one hidden gem that a lot of people are missing is that CSS already has namespaces, <xh:a href="https://developer.mozilla.org/en-US/docs/Web/CSS/@namespace">you just need to use XML</xh:a>. </xh:p>
+        <xh:p>I see a lot of people online complaining about CSS having a global namespace, and the possible leaking of styles across parts of your site as the global scope is polluted. There is a lot of work going into solving the problem, between <xh:a href="https://css-tricks.com/early-days-for-css-scoping/">scoped styles</xh:a>, the <xh:a href="https://css-tricks.com/encapsulating-style-and-structure-with-shadow-dom/">shadow DOM</xh:a>, <xh:a href="https://dev.to/ankur29mac/styled-components-efficiently-write-css-in-js-file-1nj6">CSS-in-JS</xh:a> and so on... but the one hidden gem that a lot of people are missing is that CSS already has namespaces, <xh:a href="https://developer.mozilla.org/en-US/docs/Web/CSS/@namespace">you just need to use XML</xh:a>. </xh:p>
         <csn1:mytag><xh:p>Red text</xh:p></csn1:mytag>
         <csn1:mytag><xh:p class="myclass">Red text underlined</xh:p></csn1:mytag>
         <csn2:mytag><xh:p>Green text</xh:p></csn2:mytag>
@@ -61,6 +61,6 @@
             text-decoration: line-through;
         }
     </xh:style>]]></xh:code>
-        <xh:p>You can also continue to use classes and all the other rules of CSS as normal. For a more practical example, the XML highlighter above has all its CSS in its own namespace, separate from the rest of the site, so I'll be able to chop and change that (hopefully add a bit of CSS highlighting in future) and won't need to worry about breaking anything else.</xh:p>
+        <xh:p>You can also continue to use classes and all the other rules of CSS as normal. For a more practical example, the XML highlighter above has all its CSS in its own namespace, separate from the rest of the site, so I'll be able to chop and change that highlighter (hopefully add a bit of CSS highlighting in future) and won't need to worry about breaking anything else.</xh:p>
     </at:content>
 </at:post>
