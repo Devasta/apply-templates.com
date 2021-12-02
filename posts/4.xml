@@ -61,6 +61,6 @@
             text-decoration: line-through;
         }
     </xh:style>]]></xh:code>
-        <xh:p>You can also continue to use classes and all the other rules of CSS as normal.</xh:p>
+        <xh:p>You can also continue to use classes and all the other rules of CSS as normal. For a more practical example, the XML highlighter above has all its CSS in its own namespace, separate from the rest of the site, so I'll be able to chop and change that (hopefully add a bit of CSS highlighting in future) and won't need to worry about breaking anything else.</xh:p>
     </at:content>
 </at:post>
