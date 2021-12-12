@@ -12,7 +12,7 @@
         <at:navbar>
             <xh:ul>
                 <xh:li>
-                    <xh:a href="http://apply-templates.com">Home</xh:a>
+                    <xh:a href="https://apply-templates.com">Home</xh:a>
                 </xh:li>
                 <xh:li>
                     <xh:a href="https://github.com/Devasta">

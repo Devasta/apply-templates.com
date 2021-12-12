@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<?xml-stylesheet type="text/xsl" href="../templates/main.xsl"?>
+<at:post xmlns:xh="http://www.w3.org/1999/xhtml"
+         xmlns:at="https://apply-templates.com"
+         postid="0"
+         posturl="posts/0.xml">
+    <at:title>British Leyland</at:title>
+    <at:author>Daniel</at:author>
+    <at:date>2021-12-12</at:date>
+    <at:content>
+        <xh:p>I just finished reading <xh:a href="https://www.amazon.com/gp/product/B007EQKECW/ref=dbs_a_def_rwt_hsch_vapi_tkin_p1_i0">British Leyland, Chronicle of a Car Crash 1968-1978</xh:a>, an absolutely cracking read that honestly Stephen King couldn't compete against. An absolute behemoth of a company, constantly cutting corners and dealing with never ending internal conflict. Even when they had good ideas so many internal and external factors suck them, and Chris Cowin has done a fantastic job of detailing the issues and apportioning blame. At its core, the issue BL faced is the same one plaguing companies all over the world: when your staff are a problem to be managed rather than a partner at a table, they will lose <xh:a href="https://deming.org/create-constancy-of-purpose/">constancy of purpose</xh:a>; and if they have no stake in your success then failure is all but guaranteed. It really is the difference between the staff of Tesla, Spacex and the like compared to the deepening issues currently facing Kellogs.</xh:p>
+        <xh:p>I'd really recommend it if you want to understand not just the UK of the 1970's, but also as a warning for major companies on how fast things can go wrong if all parties are not pointed in the same direction.</xh:p>
+        <xh:p>Next book I intend to read: The Power Broker: Robert Moses and the fall of New York by Robert A. Caro. This one is much heavier though, so hopefully be ready by this time next year. :D</xh:p>
+    </at:content>
+</at:post>
