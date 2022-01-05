@@ -1,0 +1,87 @@
+<?xml-stylesheet type="text/xsl" href="build/xsltforms.xsl"?>
+<xh:html xml:lang="en"
+         xmlns:xh="http://www.w3.org/1999/xhtml"
+         xmlns:xf="http://www.w3.org/2002/xforms"
+         xmlns:ev="https://www.w3.org/2001/xml-events"
+         xmlns:at="http://apply-templates.com/posts/6/calculator">
+    <xh:head>
+        <xf:model>
+            <xf:instance>
+                <at:data>
+                    <at:rewardperblock>6.25</at:rewardperblock>
+                    <at:currentpriceUSD>50000</at:currentpriceUSD>
+                    <at:blockinterval>10</at:blockinterval>
+                    <at:energycostcentperKWH>5</at:energycostcentperKWH>
+                    <at:gCO2eqkWh>475</at:gCO2eqkWh>
+                    <at:percentrevenueonenergy>60</at:percentrevenueonenergy>
+                </at:data>
+            </xf:instance>
+        </xf:model>
+        <xh:style type="text/css">
+            body {
+                box-sizing: border-box;
+                padding: 0;
+                margin: 0;
+                background-color: #eeeeee;
+                font-family: Verdana,sans-serif;
+                display:block;
+            }
+            /* calculator formcontrol {
+                display:block;
+                padding-bottom: 10px;
+            } */
+            calculator .xforms-control {
+                display:block;
+                margin: 5px;
+            }
+            calculator .xforms-value {
+                display:block;
+                margin: 5px;
+            }
+                /* My Debugger! :) */
+            /* * {
+                outline: 1px solid green;
+            } */
+        </xh:style>
+    </xh:head>
+    <xh:body>
+        <at:calculator>
+            <at:formcontrol>
+                <xf:input ref="/at:data/at:currentpriceUSD">
+                    <xf:label>Current Price - USD</xf:label>
+                </xf:input>
+            </at:formcontrol>
+            <xh:br/>
+            <at:formcontrol>
+                <xf:input ref="/at:data/at:rewardperblock">
+                    <xf:label>Reward per block</xf:label>
+                </xf:input>
+            </at:formcontrol>
+            <xh:br/>
+            <at:formcontrol>
+                <xf:input ref="/at:data/at:energycostcentperKWH">
+                    <xf:label>Energy Cost, cent per kwh</xf:label>
+                </xf:input>
+            </at:formcontrol>
+            <xh:br/>
+            <at:formcontrol>
+                <xf:input ref="/at:data/at:percentrevenueonenergy">
+                    <xf:label>Percent of revenue on electricity</xf:label>
+                </xf:input>
+            </at:formcontrol>
+            <xh:br/>
+            <at:formcontrol>
+                <xf:output value="(
+                                (
+                                at:currentpriceUSD *
+                                (at:rewardperblock * 6 * 24 * 365) *
+                                (at:percentrevenueonenergy div 100) *
+                                (475 div 1000000)
+                                ) div (at:energycostcentperKWH div 100)
+                              )">
+                    <xf:label>CO2 Generated (tonnes per year)</xf:label>
+                </xf:output>
+            </at:formcontrol>
+        </at:calculator>
+    </xh:body>
+</xh:html>

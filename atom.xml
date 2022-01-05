@@ -4,7 +4,17 @@
     <atom:title>apply-templates</atom:title>
     <atom:link href="https://apply-templates.com/atom.xml" rel="self" />
     <atom:id>apply-templates.com</atom:id>
-    <atom:updated>2021-12-12T10:31:00UTC</atom:updated>
+    <atom:updated>2022-01-05T21:56:00UTC</atom:updated>
+    <atom:entry>
+        <atom:title>Calculate Bitcoins Environmental Impact</atom:title>
+        <atom:link href="https://apply-templates.com/posts/6/6.xml"/>
+        <atom:id>https://apply-templates.com/posts/6/6.xml</atom:id>
+        <atom:updated>2022-01-05T21:56:00UTC</atom:updated>
+        <atom:summary>Bitcoin is climate Arson</atom:summary>
+        <atom:author>
+            <atom:name>Daniel</atom:name>
+        </atom:author>
+    </atom:entry>
     <atom:entry>
         <atom:title>What I've been reading.</atom:title>
         <atom:link href="https://apply-templates.com/posts/5.xml"/>
