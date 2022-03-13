@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<?xml-stylesheet type="text/xsl" href="../templates/main.xsl"?>
+<?xml-stylesheet type="text/xsl" href="https://apply-templates.com/templates/main.xsl"?>
 <at:post xmlns:xh="http://www.w3.org/1999/xhtml"
          xmlns:at="https://apply-templates.com"
          xmlns:xhl="https://apply-templates.com/XMLHL"
