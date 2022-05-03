@@ -4,7 +4,17 @@
     <atom:title>apply-templates</atom:title>
     <atom:link href="https://apply-templates.com/atom.xml" rel="self" />
     <atom:id>apply-templates.com</atom:id>
-    <atom:updated>2022-03-09T23:44:00UTC</atom:updated>
+    <atom:updated>2022-05-03T02:19:00UTC</atom:updated>
+    <atom:entry>
+        <atom:title>My knowledge of DTD's is still Rusty</atom:title>
+        <atom:link href="https://apply-templates.com/posts/8.xml"/>
+        <atom:id>https://apply-templates.com/posts/8.xml</atom:id>
+        <atom:updated>2022-05-03T02:19:00UTC</atom:updated>
+        <atom:summary>My puns are getting better though.</atom:summary>
+        <atom:author>
+            <atom:name>Daniel</atom:name>
+        </atom:author>
+    </atom:entry>
     <atom:entry>
         <atom:title>My knowledge of DTD's is a little Rusty...</atom:title>
         <atom:link href="https://apply-templates.com/posts/7.xml"/>

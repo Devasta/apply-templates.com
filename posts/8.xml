@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<?xml-stylesheet type="text/xsl" href="https://apply-templates.com/templates/main.xsl"?>
+<at:post xmlns:xh="http://www.w3.org/1999/xhtml"
+         xmlns:at="https://apply-templates.com"
+         postid="7"
+         posturl="posts/8.xml">
+    <at:title>My knowledge of DTD's is still Rusty</at:title>
+    <at:author>Daniel</at:author>
+    <at:date>2022-05-03</at:date>
+    <at:content>
+        <xh:p>Hello all! So, if there is one thing to take from this post it's that the XML community is full of very helpful people, but that is barely a tweet, nevermind a full blog post, so a bit more about what I am looking at at the moment below:</xh:p>
+        <xh:p>Referring back to my previous post, I posted a very obfuscated DTD, and part of my testing yielded unusual results: Chrome and Saxon said it was invalid, but Firefox accepted it just fine. A quick question into the <xh:a href="http://lists.xml.org/archives/xml-dev/202203/msg00055.html">XML-Dev</xh:a> mailing list revealed... its valid based on whether or not the DTD was external or internal! Fascinating stuff, and probably best that I figured that out now before I backed myself into a corner on my attempts at building an XML parser.</xh:p>
+        <xh:p>Speaking of which, I've hit a bit of a snag with Entity expansion in Rust. Rust has a fantastic ownership model, and part of it means that you cannot return references to values created inside functions, however <xh:a href="https://github.com/Geal/nom">Nom</xh:a>, the rust parser combinator framework that xRust is using, wants references to a string for all combinators, meaning we cannot create a combinator that expands entities during parsing. This means we have a choice in front of us:</xh:p>
+        <xh:p><xh:b>Option 1 - Don't support DTDs at all:</xh:b> This is regrettably what most XML libraries appear to have went with, but I think it'd be a disservice to Docbook and other XML systems that rely on DTDs.</xh:p>
+        <xh:p><xh:b>Option 2 - Support only a subset of entities</xh:b> The challenge with entities is that they don't just have character data, they also can contain XML to be parsed. If it were only CDATA then you could probably do something quite easily, but only supporting half a feature I think would cause more confusion than not supporting any of it.</xh:p>
+        <xh:p><xh:b>Option 3 - Multiple sweeps of the parser:</xh:b> This wouldn't be too bad actually for the DTD itself, however entities can contain entities themselves, and this would be a performance killer, I'd dread to imagine a process reading in a gig of XML only to hit an entity, expand and then start the process from the beginning.</xh:p>
+        <xh:p><xh:b>Option 4 - Use the <xh:a href="https://microsoft.github.io/windows-docs-rs/doc/windows/Win32/Data/Xml/MsXml/index.html">Windows</xh:a> crate for parsing:</xh:b> Although this would work for me as a windows user, and I am sure that we could find something similar for Mac and Linux, most XML libraries right now if they are not streaming parsers output a DOM, and we are explicitly using <xh:a href="https://www.w3.org/TR/xpath-datamodel-31/">XPath Data Model 3.1</xh:a> internally, so no good.</xh:p>
+        <xh:p>This leaves us with our last choice... <xh:b>Option 5 - write our own parser combinator library</xh:b>. This is yak-shaving to the extreme, and I am all for it. I found a fantastic article that talks about implementing your own parser combinators in rust and demonstrates how to do so by parsing... <xh:a href="https://bodil.lol/parser-combinators/">XML!</xh:a></xh:p>
+        <xh:p>If that isn't a sign, I don't know what is.</xh:p>
+    </at:content>
+</at:post>
