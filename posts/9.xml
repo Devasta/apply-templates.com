@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<?xml-stylesheet type="text/xsl" href="https://apply-templates.com/templates/main.xsl"?>
+<at:post xmlns:xh="http://www.w3.org/1999/xhtml"
+         xmlns:at="https://apply-templates.com"
+         postid="9"
+         posturl="posts/9.xml">
+    <at:title>A new alert box</at:title>
+    <at:author>Daniel</at:author>
+    <at:date>2022-05-20</at:date>
+    <at:content>
+        <xh:p>This post is a test for a new alert box I am trying to implement in CSS.</xh:p>
+        <at:alert warning="If you click the icon, it will dismiss this warning, and show new content in its place."><xh:p>This is the new content!</xh:p></at:alert>
+        <xh:p>Learning CSS is fun.</xh:p>
+    </at:content>
+</at:post>

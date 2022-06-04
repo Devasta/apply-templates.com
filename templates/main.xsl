@@ -16,10 +16,11 @@
                 indent="yes"
                 media-type="application/xhtml+xml"/>
 
-    <xsl:include href="https://apply-templates.com/XMLHL/XMLHL.xsl"/>
+    <xsl:include href="XMLHL.xsl"/>
     <xsl:include href="navbar.xsl"/>
     <xsl:include href="posts.xsl"/>
     <xsl:include href="socialmedia.xsl"/>
+    <xsl:include href="alert.xsl"/>
 
     <xsl:template match="@*|node()">
         <xsl:copy>
@@ -66,7 +67,7 @@
                 <xsl:call-template name="SocialsStyle"/>
 
                 <xsl:call-template name="XMLHLStyles"/>
-
+                <xsl:call-template name="AlertCSS"/>
             </xh:head>
             <xh:body>
                 <xsl:call-template name="navbar"/>
