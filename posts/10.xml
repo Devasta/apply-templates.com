@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<?xml-stylesheet type="text/xsl" href="https://apply-templates.com/templates/main.xsl"?>
+<at:post xmlns:xh="http://www.w3.org/1999/xhtml"
+         xmlns:at="https://apply-templates.com"
+         postid="10"
+         posturl="posts/10.xml">
+    <at:title>Most likely, the internet has already come to an end.</at:title>
+    <at:author>Daniel</at:author>
+    <at:date>2022-12-16</at:date>
+    <at:content>
+        <xh:p>Carbon-14 is constantly being created in the atmosphere, thanks to the interaction of cosmic rays with nitrogen. This carbon-14 gets absorbed by plants, which are in turn eaten by animals, and over a period of thousands of years decays to carbon-12. This forms the basis of carbon dating, allowing us to reliably measure the date of objects with organic matter up to 50,000 years old and made before around 1945, after which is cannot be used at all.</xh:p>
+        <xh:p>Why 1945? Because nuclear bomb testing has released large amount of neutrons into the atmosphere and <xh:a href="https://en.wikipedia.org/wiki/Bomb_pulse">messed with the levels of carbon-14 generated as a result</xh:a>.</xh:p>
+        <xh:p>The internet has had its own nuclear bomb tests go off. While Oppenheimer had Trinity, the internet has Stable Diffusion, GPT3 and Midjourney. We are seeing the pushback already, with the generated images being banned on sites such as <xh:a href="https://www.theverge.com/2022/9/21/23364696/getty-images-ai-ban-generated-artwork-illustration-copyright">Getty Images</xh:a>, <xh:a href="https://arstechnica.com/information-technology/2022/09/flooded-with-ai-generated-images-some-art-communities-ban-them-completely/">Newgrounds and Furaffinity</xh:a>, as well as GPT-3 banned on <xh:a href="https://meta.stackoverflow.com/questions/421831/temporary-policy-chatgpt-is-banned">StackOverflow</xh:a>.</xh:p>
+        <xh:p>These AI models have lage amounts of scraped data from the web fed into them, capable of generating vast quantities of blended junk that no one wants. When all blogs, forum comments, product reviews and image sites are stuffed to the gills with this pigswill users will have enough difficulty as it is figuring out if they're seeing the output of a person or AI, so how are AI makers meant to automatically figure it out when they are harvesting comments or stealing art for their data sets?</xh:p>
+        <xh:p>There is market these days for low-background steel, steel that has not been affected by radiation, for sensitive equipment like Geiger counters and medical devices, which the world is getting by <xh:a href="https://hackaday.com/2017/03/27/low-background-steel-so-hot-right-now/">salvaging sunken WW2 ships</xh:a>. In the future there'll be demand for internet data dumps from pre-2022, as those will be the only sources that anyone will have any confidence of being real people.</xh:p>
+        <xh:p>Just as 1945 is the end of history for carbon dating, 2022 is the end of history for the internet.</xh:p>
+    </at:content>
+</at:post>

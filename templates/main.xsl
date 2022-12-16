@@ -13,7 +13,7 @@
                 doctype-system="http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"
                 xml:lang="en"
                 encoding="UTF-8"
-                indent="yes"
+                indent="no"
                 media-type="application/xhtml+xml"/>
 
     <xsl:include href="XMLHL.xsl"/>

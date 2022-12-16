@@ -4,7 +4,27 @@
     <atom:title>apply-templates</atom:title>
     <atom:link href="https://apply-templates.com/atom.xml" rel="self" />
     <atom:id>apply-templates.com</atom:id>
-    <atom:updated>2022-05-03T02:19:00UTC</atom:updated>
+    <atom:updated>2022-12-16T23:40:00UTC</atom:updated>
+    <atom:entry>
+        <atom:title>Most likely, the internet has already come to an end.</atom:title>
+        <atom:link href="https://apply-templates.com/posts/10.xml"/>
+        <atom:id>https://apply-templates.com/posts/10.xml</atom:id>
+        <atom:updated>2022-12-16T23:40:00UTC</atom:updated>
+        <atom:summary>AI is the end of us all.</atom:summary>
+        <atom:author>
+            <atom:name>Daniel</atom:name>
+        </atom:author>
+    </atom:entry>
+    <atom:entry>
+        <atom:title>Messing around in CSS.</atom:title>
+        <atom:link href="https://apply-templates.com/posts/9.xml"/>
+        <atom:id>https://apply-templates.com/posts/9.xml</atom:id>
+        <atom:updated>2022-06-04T11:50:00UTC</atom:updated>
+        <atom:summary>New alert component.</atom:summary>
+        <atom:author>
+            <atom:name>Daniel</atom:name>
+        </atom:author>
+    </atom:entry>
     <atom:entry>
         <atom:title>My knowledge of DTD's is still Rusty</atom:title>
         <atom:link href="https://apply-templates.com/posts/8.xml"/>
